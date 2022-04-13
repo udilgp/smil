@@ -6,8 +6,18 @@
             <root-layout width="1920" height="1080" backgroundColor="#ff0000" />
 
             <!-- define the screen layout, in this case single fullscreen zone -->
-            <region regionName="main" left="0" top="0" width="1920" height="1080" z-index="1" backgroundColor="#00ff00"/>
+            <region regionName="main" left="0" top="0" width="1920" height="1080" z-index="1" backgroundColor="#00ff00">
+                <region regionName="trigger-sub-region1" left="0" top="0" width="100%" height="100%" />
+            </region>
+
         </layout>
+
+        <triggers>
+            <trigger id="trigger1" condition="or">
+                <condition origin="keyboard" data="1" action="keyUp" />
+            </trigger>
+        </triggers>
+
     </head>
     <body>
         <par>
@@ -33,10 +43,9 @@
                 <!-- indefinite loop of media files in the selected order -->
                 <!-- in this case it will play landscape1.mp4, then landscape1.jpg, landscape2.jpg, landscape1.jpg, landscape2.jpg, then landscape2.mp4, landscape2.mp4 and repeat -->
                 <seq repeatCount="indefinite">
-
                     <video dur="3s" src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
-
                 </seq>
+                
             </par>
         </par>
     </body>
