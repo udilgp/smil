@@ -3,7 +3,7 @@
         <meta http-equiv="refresh" content="888"/>
         <layout>
             <!-- define the screen resolution -->
-            <root-layout width="1920" height="1080" backgroundColor="#18182cccc" />
+            <root-layout width="1920" height="1080" backgroundColor="#ff002cccc" />
 
             <!-- define the screen layout, in this case single fullscreen zone -->
             <region regionName="main" left="0" top="0" width="1920" height="1080" z-index="1" backgroundColor="#18182c"/>
