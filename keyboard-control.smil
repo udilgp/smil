@@ -14,14 +14,14 @@
             <seq end="__prefetchEnd.endEvent">
                 <seq repeatCount="indefinite">
                     <!-- Play waiting prompt -->
-                    <video src="https://signageos-demo.s3.eu-central-1.amazonaws.com/smil/samples/assets/loader.mp4" />
+                    <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-DOWN-5sec.mp4" />
                 </seq>
             </seq>
 
             <!-- Downloading resources into the internal storage -->
             <seq>
 
-                <prefetch src="https://raw.githubusercontent.com/udilgp/smil/master/fhd-bars-silent-LOOP-5sec.mp4" />
+                <prefetch src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" />
 
 
 
@@ -34,7 +34,7 @@
                 <!-- in this case it will play landscape1.mp4, then landscape1.jpg, landscape2.jpg, landscape1.jpg, landscape2.jpg, then landscape2.mp4, landscape2.mp4 and repeat -->
                 <seq repeatCount="indefinite">
 
-                    <video dur="3s" src="https://raw.githubusercontent.com/udilgp/smil/master/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
+                    <video dur="3s" src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
 
                 </seq>
             </par>
