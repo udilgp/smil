@@ -19,10 +19,10 @@
 
     </head>
     <body>
-        <excl repeatCount="indefinite">
-            <par>
-                <seq begin="trigger1">
-                    <video dur="3s" src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
+        <seq  repeatCount="indefinite">
+            <par repeatCount="indefinite">
+                <seq>
+                    <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
             </par>
             <par>
@@ -30,7 +30,7 @@
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
             </par>
-        </excl>
+        </seq>
 
 
     </body>
