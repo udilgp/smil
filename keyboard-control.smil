@@ -20,7 +20,7 @@
     </head>
     <body>
         <seq  repeatCount="indefinite">
-            <par repeatCount="indefinite">
+            <par repeatCount="indefinite"  begin="trigger1">
                 <seq>
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
