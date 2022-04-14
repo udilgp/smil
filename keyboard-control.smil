@@ -1,6 +1,11 @@
 <smil>
     <head>
-        <meta http-equiv="refresh" content="888"/>
+
+        <triggers>
+            <trigger id="trigger1" condition="or">
+                <condition origin="keyboard" data="1" action="keyUp" />
+            </trigger>
+        </triggers>
         <layout>
             <!-- define the screen resolution -->
             <root-layout width="1920" height="1080" backgroundColor="#ff0000" />
@@ -11,12 +16,6 @@
             </region>
 
         </layout>
-
-        <triggers>
-            <trigger id="trigger1" condition="or">
-                <condition origin="keyboard" data="1" action="keyUp" />
-            </trigger>
-        </triggers>
 
     </head>
     <body>
