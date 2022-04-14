@@ -22,15 +22,23 @@
 
     </head>
     <body>
-        <seq  repeatCount="indefinite">
+        <seq repeatCount="indefinite">
+
             <par repeatCount="indefinite">
-                <seq  begin="trigger0">
+                <seq>
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
             </par>
+
             <par>
                 <seq begin="trigger1">
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" region="main" soundLevel="10%"></video>
+                </seq>
+            </par>
+
+            <par>
+                <seq  begin="trigger0">
+                    <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
             </par>
         </seq>
