@@ -2,6 +2,9 @@
     <head>
 
         <triggers>
+            <trigger id="trigger0" condition="or">
+                <condition origin="keyboard" data="0" action="keyUp" />
+            </trigger>
             <trigger id="trigger1" condition="or">
                 <condition origin="keyboard" data="1" action="keyUp" />
             </trigger>
@@ -20,7 +23,7 @@
     </head>
     <body>
         <seq  repeatCount="indefinite">
-            <par repeatCount="indefinite"  begin="trigger1">
+            <par repeatCount="indefinite"  begin="trigger0">
                 <seq>
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
