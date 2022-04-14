@@ -19,41 +19,19 @@
 
     </head>
     <body>
-        <par>
-            <seq end="__prefetchEnd.endEvent">
-                <seq repeatCount="indefinite">
-                    <!-- Play waiting prompt -->
-                    <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-DOWN-5sec.mp4" />
-                </seq>
-            </seq>
-
-            <!-- Downloading resources into the internal storage -->
-            <seq>
-
-                <prefetch src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" />
-                <prefetch src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" />
-
-                <seq id="__prefetchEnd" dur="1s"/>
-            </seq>
-
-            <par begin="__prefetchEnd.endEvent" repeatCount="indefinite">
-
-                <!-- indefinite loop of media files in the selected order -->
-                <!-- in this case it will play landscape1.mp4, then landscape1.jpg, landscape2.jpg, landscape1.jpg, landscape2.jpg, then landscape2.mp4, landscape2.mp4 and repeat -->
+        <excl repeatCount="indefinite">
+            <par>
                 <seq repeatCount="indefinite">
                     <video dur="3s" src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-LOOP-5sec.mp4" region="main" soundLevel="10%"></video>
                 </seq>
-
             </par>
             <par>
-                <!-- referencing <trigger id="trigger1"> defined in <head>  "aaaaa" is not a mandatory naming -->
                 <seq begin="trigger1">
-                    <!-- As a region you always set the parent of the sub-regions -->
                     <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" region="main" soundLevel="10%"></video>
-
                 </seq>
-
             </par>
-        </par>
+        </excl>
+
+
     </body>
 </smil>
