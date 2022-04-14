@@ -49,7 +49,7 @@
                 <!-- referencing <trigger id="trigger1"> defined in <head>  "aaaaa" is not a mandatory naming -->
                 <seq begin="trigger1">
                     <!-- As a region you always set the parent of the sub-regions -->
-                    <video dur="3s" src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" region="main" soundLevel="10%"></video>
+                    <video src="https://lginstore-smil-test.s3.amazonaws.com/media/fhd-bars-silent-01-5sec.mp4" region="main" soundLevel="10%"></video>
 
                 </seq>
 
